@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Hanson;
+  src: url(./Hanson-Bold.otf);
+}
+@font-face {
+  font-family: DTRandom;
+  src: url(./DTRandomDisplay-Regular.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: DTRandom;
+  font-size: 8rem;
+  font-weight: 100;
+}
+h1 span {
+  color: #ffa2fd;
+}
+
+.description,
+.final {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.container-wrapper {
+  overflow: hidden;
+}
+
+.container {
+  width: fit-content;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+}
+
+.panel {
+  font-size: 18rem;
+  flex-shrink: 0;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  font-family: Hanson;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel:nth-of-type(odd) {
+  color: #03f569;
+  background-color: #111;
+}
+.panel:nth-of-type(even) {
+  color: #ffa2fd;
+  background-color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
